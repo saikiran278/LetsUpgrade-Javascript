@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf=8"/>
+</head>
+<body>
+<script>
+var today = new Date();
+  var dd = today.getDay();
+  var dl = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  document.write("Today is : " + dl[dd] + ".");
+  document.write("\n");
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var sec = today.getSeconds();
+  var session = (h >= 12)? " PM ":" AM ";
+  h = (h >= 12)? h - 12: h;
+  
+document.write("Current Time : "+h + session + " : " + m + " : " + sec);
+</script>
+</body>
+</html>

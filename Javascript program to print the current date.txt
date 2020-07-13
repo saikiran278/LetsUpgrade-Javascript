@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf=8"/>
+
+    </head>
+    <body>
+        <script>
+var todaydate = new Date();
+var date = todaydate.getDate();
+
+var month = todaydate.getMonth()+1; 
+var year = todaydate.getFullYear();
+if(date<10) 
+{
+    date='0'+date;
+} 
+
+if(month<10) 
+{
+    month='0'+month;
+} 
+todaydate = month+'-'+date+'-'+year;
+document.write(todaydate);
+todaydate = month+'/'+date+'/'+year;
+document.write(todaydate);
+todaydate = date+'-'+month+'-'+year;
+document.write(todaydate);
+todaydate = date+'/'+month+'/'+year;
+document.write(todaydate);
+</script>
+</body>
+</html>
