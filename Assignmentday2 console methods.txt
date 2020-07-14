@@ -1,0 +1,83 @@
+The Console object provides access to the browser's debugging console.
+
+Types of methods used in console:
+
+assert()		Writes an error message to the console if the assertion is false
+clear()			Clears the console
+count()			Logs the number of times that this particular call to count() has been called
+error()			Outputs an error message to the console
+group()			Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called
+groupCollapsed()	Creates a new inline group in the console. However, the new group is created collapsed. The user will need to use the disclosure button to expand it
+groupEnd()		Exits the current inline group in the console
+info()			Outputs an informational message to the console
+log()			Outputs a message to the console
+table()			Displays tabular data as a table
+time()			Starts a timer (can track how long an operation takes)
+timeEnd()		Stops a timer that was previously started by console.time()
+trace()			Outputs a stack trace to the console
+warn()			Outputs a warning message to the console
+
+
+1)The console.assert() method writes a message to the console, but only if an expression evaluates to false.
+  console.assert(expression, message)
+Example:
+	var myObj = { firstname : "John", lastname : "Doe" };
+console.assert(document.getElementById("demo"), myObj);
+
+2)The console.clear() method clears the console.
+  The console.clear() method will also write a message in the console: "Console was cleared".
+
+3)console.count()  ->  Write to the console the number of time the console.count() is called inside the loop.
+ Example:
+
+  console.count();// 1
+  console.count(); // 2
+
+4)The console.error() method writes an error message to the console.
+  The console is useful for testing purposes.
+  When testing this method, be sure to have the console view visible.
+
+5)The console.group() method indicates the start of a message group.
+  All messages will from now on be written inside this group.
+  Use the console.groupEnd() method to end the group.
+  Use the console.groupCollapsed() method to hide the message group.
+
+6)The console.groupCollapsed() method indicates the start of a collapsed message group.
+  Click the expand button to open the message group.
+  All messages will from now on be written inside this group.
+
+7)The console.groupEnd() method indicates the end of a message group.
+  Use the console.group() method to start a message group.
+  Use the console.groupCollapsed() method to start a collapsed message group.
+
+8)The console.info() method writes a message to the console.
+
+9)The console.log() method writes a message to the console.
+  The console is useful for testing purposes.
+
+10)The console.table() method writes a table in the console view.
+   The first parameter is required, and must be either an object, or an array, containing data to fill the table.
+
+11)The console.time() method starts a timer in the console view.
+   This method allows you to time certain operations in your code for testing purposes.
+   Use the console.timeEnd() method to end the timer and display the result in the console.view.
+   Use the label parameter to name the timer, then you are able to have many timers on the same page.
+
+12)The console.timeEnd() method ends a timer, and writes the result in the console view.
+   This method allows you to time certain operations in your code for testing purposes.
+   Use the console.time() method to start the timer.
+   Use the label parameter to specify which timer to end.
+
+13)The console.trace() method displays a trace that show how the code ended up at a certain point.
+
+
+14)The console.warn() method writes a warning to the console.
+
+
+
+
+
+
+
+
+

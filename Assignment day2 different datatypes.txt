@@ -1,0 +1,77 @@
+JavaScript has seven types. Types are values that JavaScript can have. Below is a list of data types that JavaScript can have:
+
+Number
+String
+Boolean
+Undefined
+Null
+Object
+Symbol
+
+The ‘Symbol’ data type is new in JavaScript. It has been included in the ES6 version. We can find the type of value or data by using the ‘typeof’ JavaScript operator. 
+The above data types in JavaScript are divided into two broad categories, primitive and non-primitive.
+
+The Primitive Data types in JavaScript include 
+
+Number, String, Boolean, Undefined, Null and Symbol.
+A number data type can be an integer, a floating point value, an exponential value, a ‘NaN’ or a ‘Infinity’.
+var a=250;  // integer value
+var b=25.5;  // a number containing a decimal 
+
+
+The string data type in JavaScript can be any group of characters enclosed by a single or double-quotes or by backticks.
+var str1 = "This is a string1";  // This is a string primitive type or string literal
+var str2= 'This is a string2';
+var str3 = "This is a string3";
+var str5= new String(“hello”);  // This is a string object
+console.log(str4); // This will return the string ‘hello’
+
+
+The boolean data type has only two values, true and false. It is mostly used to check a logical condition. 
+Thus Booleans are logical data types which can be used for comparison of two variables or to check a condition.
+typeof(true) // returns boolean
+typeof(false) // returns boolean
+var a =5;
+var b=6;
+a==b // returns false
+
+
+
+Undefined data type means a variable that is not defined. The variable is declared but doesn’t contain any value.
+var a;
+console.log(a); // This will return undefined.
+
+
+The null in JavaScript is a data type that is represented by only one value, the ‘null’ itself. A null value means no value.
+var a = null;
+console.log(a);   // This returns null
+typeof(a);         // This returns object
+
+
+
+The ‘symbol’ data type is new in es6. It is one of the new features of es6. 
+The symbol data type defines a property of an object which is private to the object. It refers to the ‘key’ of the key-value pair of an object.
+
+var object1 = {
+   name: ‘Shalini’,
+   age: 25,
+   city: ‘Mumbai’
+}
+var occupation=Symbol(‘engineer’);
+The function Symbol() is used to create a new symbol. 
+Here we have created a symbol ‘occupation’ with the value ‘engineer’ for the above object ‘object1’.
+
+
+
+The Non-Primitive data type has only one member i.e. the Object.
+The JavaScript arrays and functions are also objects.
+
+Let’s create an object literal. An object in JavaScript contains key-value pairs in its address. 
+When we refer to obj1, we are actually referring to the address in memory which contains the value {a: 5, b: 6}, instead of the value {a: 5, b: 6} directly.
+
+var obj1 = { a: 5, b: 6 };
+
+We can change or mutate the value of obj1. 
+
+obj1[a] =7;
+console.log(obj1) // will return the value {a: 7, b: 6}

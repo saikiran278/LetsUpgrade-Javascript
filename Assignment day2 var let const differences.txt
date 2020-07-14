@@ -1,0 +1,46 @@
+Main difference is scoping rules. 
+Variables declared by var keyword are scoped to the immediate function body (hence the function scope) 
+while let variables are scoped to the immediate enclosing block denoted by { }.
+
+
+Example:
+
+var f = "Sai"; 
+{
+  
+  let f = "Kiran";
+  console.log(f);  // output will be Kiran
+}
+
+  console.log(f); //output will be Sai
+
+  
+}
+
+const scope is defined as 'block scoped' (the scope of which, is restricted to the block in which it is declared).
+Because of this, we cannot change constant primitive values, but we can change the properties of constant objects.
+
+In const keyword while initialization value must be provided otherwise it will results in an error.
+
+
+Example:
+ const reg; //Error
+
+  const reg="Hyderabad"; // valid const variable
+  console.log(reg); // Hyderabad
+
+For constant variable new value cannot be assigned after it is already assigned with a value.
+
+  const reg = "Andhrapradesh"; // Error 
+
+You can change the properties of a constant object:
+
+Example
+// You can create a const object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// You can change a property:
+car.color = "red";
+
+// You can add a property:
+car.owner = "Johnson";
