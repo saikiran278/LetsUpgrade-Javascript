@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Ways of writing string</p>
+    <script>
+        let name="prasad"; // using double quotes
+        name='hari'; // using single quotes
+        name=`krishna`; // using backticks
+        console.log(name);
+        let names='shiva'+'hari'; // string concatenation
+        console.log(names); // prints shivahari
+        console.log(typeof names); // prints the type of variable(prints string)
+        console.log(typeof(names)); // another method for finding type of variable
+        console.log("2"+3); // prints 23 (converts int to string)
+
+        document.write("Methods for operating strings");
+
+        str="HELLO WELCOME";
+        console.log(str.charAt(0)); // "charAt(index)" prints the element at the provided index
+
+        var str = "HELLO WORLD";
+        var n = str.charCodeAt(0); //prints the ascii value of the element present at the index
+        console.log(n);
+
+        var str1 = "Hello ";
+        var str2 = "world!";
+        var res = str1.concat(str2); // concatenate the two stings and stores in "res"
+        console.log(res); // prints the concatenated string
+
+        var str = "Hello world, welcome to the universe.";
+        var n = str.endsWith("universe."); //"ensdWith" returns true if string ends with given value else false
+        console.log(n); 
+
+        var res = String.fromCharCode(65);
+        console.log(res);  // returns the character of the provided ascii value
+        
+        var str = "Hello world, welcome to the universe.";
+        var n = str.includes("world"); // str.includes(substring) checks whether the substring is present in main string
+        console.log(n); // return true if present else false
+
+        var str1 = "ab";
+        var str2 = "cd";
+        var n = str1.localeCompare(str2); // compare the two strings //Returns -1 if str1 is sorted before str2 
+                                          //Returns 0 if the two strings are equal //Returns 1 if str1 is sorted after str2
+        console.log(n); //prints(0 (or) 1 (or) -1)
+
+        var str = "The rain in SPAIN stays mainly in the plain"; 
+        var res = str.match(/ain/gi); // return array and number of of substrings if the substring matches the part of main string
+                                      //"gi" refers to situation is case-insesnitive
+        var res1 = str.match(/ain/g); // "g" refers to case-sensitive
+        console.log(res);
+        console.log(res1);
+
+        var str = "Hello world!";
+        console.log(str.repeat(3)); // prints the string upto given number of times
+
+        var str = "Letsupgrade";
+        var res = str.replace("upgrade", "enjoy"); //replaces old substring with new substring
+        console.log(res);
+
+        let strnew="Hyderabad Telangana";
+        console.log(strnew.search('d'));//returns the index of substring
+        console.log(str.slice(1,5)); //prints the string from given index to given index
+
+
+    </script>
+    <p>arrays</p>
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango",'Guava',"Pineapple"];
+        var result = fruits.join(" && ");
+        console.log(result);
+
+        delete fruits[0];           // Changes the first element in fruits to undefined
+        console.log(fruits);
+
+        fruits.splice(2, 0, "Papaya", "Cherry"); //first argument refers to where to insert the values 
+                                                 //and 2nd refers to delete how many values
+        console.log(fruits);
+
+        var newfruits=fruits.slice(2,5); // sub array will be created from main array between given index
+        console.log(newfruits);
+
+        var sorting=fruits.sort(); // sorts the array
+        console.log(sorting);
+
+        
+
+
+    </script>
+</body>
+</html>
