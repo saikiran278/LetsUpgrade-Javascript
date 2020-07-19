@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       
+    let operator = prompt("operator (+ - * / % sq %%)");
+    let n1,n2;
+    switch(operator)
+    {
+        case '+':
+         n1 = prompt("Enter num1");
+         n2 = prompt("Enter num2");
+         let sum = +n1 + +n2;
+        console.log(sum);
+        break;
+
+        case '-':
+         n1 = prompt("Enter num1");
+         n2 = prompt("Enter num2");
+         let sub = n1 - n2;
+        console.log(sub);
+        break;
+
+        case '*':
+         n1 = prompt("Enter num1");
+         n2 = prompt("Enter num2");
+         let prod = n1 * n2;
+        console.log(prod);
+        break;
+
+        case '/':
+         n1 = prompt("Enter num1");
+         n2 = prompt("Enter num2");
+         let div = n1 / n2;
+        console.log(div);
+        break;
+
+        case '%%':
+         n1 = prompt("Enter total value");
+         n2 = prompt("Enter percentage to be calculated");
+         let percentage = (n1*n2)/100;
+        console.log(percentage);
+        break;
+
+        case '%':
+         n1 = prompt("Enter num1");
+         n2 = prompt("Enter num2");
+         let remainder = n1 % n2;
+        console.log(remainder);
+        break;
+
+        case 'sq':
+         n1 = prompt("Enter num");
+         let squareroot = Math.sqrt(n1);
+        console.log(squareroot);
+        break;
+
+        default:
+        console.log("Invalid operator");
+    }
+</script> 
+</body>
+</html>
