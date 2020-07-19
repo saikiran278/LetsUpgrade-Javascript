@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = prompt("Enter a number");
+        var i;
+        let arr=new Array(number-2);
+        for(i=0;i<=number-2;i++)
+        {
+            arr[i]=i+2;
+        }
+        let sq = Math.sqrt(number);
+        for(i=0;i<number;i++)
+        {
+            if(arr[i] != -1)
+            for(let j=arr[i]*arr[i]-2;j<=number-2;j=j+arr[i])
+            {
+                arr[j]=-1;
+            }
+        }
+        for(i=0;i<=number-2;i++)
+        {
+            if(arr[i]!=-1)
+                console.log(arr[i]);
+        }
+
+    </script>
+</body>
+</html>
