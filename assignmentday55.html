@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let value =prompt("Enter the price");
+        let sum=0;
+        if(value>=0 && value <=5000)
+        {
+            let percentage = (value*2)/100;
+            sum+=percentage;
+        } 
+        else if(value > 5000 && value<10000)
+        {
+            let percentage=(value*5)/100;
+            sum+=percentage;
+        }
+        else if(value > 10000 && value < 20000 )
+        {
+            let percentage = (value *7)/100;
+            sum+=percentage;
+        }
+        else if(value > 20000)
+        {
+            let percentage = (10 *value)/100;
+            sum+=percentage;
+        }
+        console.log(`Total comission is ${sum}`);
+    </script>
+</body>
+</html>
