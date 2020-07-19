@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       let operator = prompt("operator (+ - * / % sq %%)");
+if(operator == '+')
+{
+    let n1 = prompt("Enter num1");
+    let n2 = prompt("Enter num2");
+    let sum = +n1 + +n2;
+    console.log(sum);
+}
+
+else if(operator == '-')
+{
+    let n1 = prompt("Enter num1");
+    let n2 = prompt("Enter num2");
+    let sub = n1 - n2;
+    console.log(sub);
+} 
+else if(operator == '*')
+{
+    let n1 = prompt("Enter num1");
+    let n2 = prompt("Enter num2");
+    let prod = n1 * n2;
+    console.log(prod);
+}
+else if(operator == '/')
+{
+    let n1 = prompt("Enter num1");
+    let n2 = prompt("Enter num2");
+    let div = n1 / n2;
+    console.log(div);
+}
+else if(operator == '%%')
+{
+    let n1 = prompt("Enter total value");
+    let n2 = prompt("Enter percentage to be calculated");
+    let percentage = (n1*n2)/100;
+    console.log(percentage);
+}
+else if(operator == '%')
+{
+    let n1 = prompt("Enter num1");
+    let n2 = prompt("Enter num2");
+    let remainder = n1 % n2;
+    console.log(remainder);
+}
+else if(operator == 'sq')
+{
+    let n1 = prompt("Enter num");
+    let squareroot = Math.sqrt(n1);
+    console.log(squareroot);
+}
+else
+{
+    console.log("Invalid operator");
+}
+</script> 
+</body>
+</html>
