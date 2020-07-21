@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="">
+       class User
+        {
+            constructor(name,age,mail)
+            {
+                this.name=name;
+                this.age=age;
+                this.mail=mail;
+                this.coins=0;
+                this.courses=[];
+            }
+            login()
+            {
+                console.log(`${this.name} logged in`);
+                return this;
+            }
+            logout()
+            {
+                console.log(`${this.name} logged out`);
+                return this;
+            }
+        }
+
+        class  moderator extends User
+        {
+            
+            addcoins()
+            {
+                this.coins++;
+                console.log(`${this.name} has ${this.coins} coins`);
+                
+            }
+            removecoins()
+            {
+                if(this.coins>0)
+                {
+                    this.coins--;
+                    console.log(`${this.name} has ${this.coins} coins`);
+                
+                }
+                else{
+                    console.log(`${this.name} has no coins`);
+                    
+                }
+            }
+        }
+        class Admin extends moderator
+        {
+                addcourses(user,course)
+                {
+                    user.courses.push(course);
+                    console.log(user);
+                }
+                removecourses(user,course)
+                {
+                    users=users.filter(u =>{
+                        for(let i=0;i<u.courses.length;i++)
+                        {
+                            if(u.courses[i] != user.course)
+                            {
+                                return u;
+                            }
+                        }
+                    })
+                }
+        }
+
+        let u1 = new User("sai",20,"saik@gmail.com");
+        let u2 = new User("saikiran",21,"saikiran@gmail.com");
+        let mod = new moderator("Kali",22,"kali@gmail.com");
+        let admin=new Admin("admin1",56,"admin@gmail.com");
+        users = [u1,u2,mod,admin];
+        admin.addcourses(u1,"Python");
+        admin.removecourses(u1,"Python");
+        console.log(users); 
+    </script>
+</body>
+</html>
