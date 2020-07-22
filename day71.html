@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="day71.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="full"></div>
+    <script>
+        var div = document.getElementById("full");
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++ ) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeColor(){
+        div.style.backgroundColor= getRandomColor();
+        }
+
+        setInterval(changeColor,5000);
+    </script>
+</body>
+</html>
