@@ -1,0 +1,26 @@
+#title{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+#clock{
+    text-align: center;
+    color: blueviolet;
+}
+#btn{
+    margin-top: 20px;
+    margin-left: 48% ;
+    color: black;
+    background-color: blueviolet;
+}
+
+.dark{
+    width: 100%;
+  background-color: grey;
+  color: white;
+  box-sizing: border-box;
+}
+.bgcolor{
+    width : 100%;
+    background-color: greenyellow;
+}
