@@ -64,9 +64,7 @@ function Quote(text, author, source) {
     showRandomQuote(randomQuote)
   }
   
-  function shareTwitter() {
-    var Text = document.getElementById('quote').innerHTML + " - " + document.getElementById('author').innerHTML + ", " + document.getElementById('source').innerHTML;
-  }
+  
   
   document.addEventListener('DOMContentLoaded', getRandomQuote);
   document.getElementById('new-quote-button').addEventListener('click', getRandomQuote);
